@@ -7,8 +7,8 @@ import { create as ipfsHttpClient } from 'ipfs-http-client';
 import { MarketAddress, MarketAddressABI } from './constants';
 
 const subdomainName = 'polyplace';
-const projectId = '2DZ5SclLb6YJBoDvir5Rh96PAVt';
-const projectSecret = 'd44b2bde4d2bb227907264225330c102';
+const projectId = '2JiDPAHVQOfT2Q6vywSZfLS0pU9';
+const projectSecret = 'a5404540e22a3796f2ea08b5519b9fbe';
 
 const authorization = `Basic ${btoa(`${projectId}:${projectSecret}`)}`;
 
@@ -26,7 +26,7 @@ const fetchContract = (signerOrProvider) => new ethers.Contract(MarketAddress, M
 export const NFTContext = React.createContext();
 
 export const NFTProvider = ({ children }) => {
-  const nftCurrency = 'MATIC';
+  const nftCurrency = 'ALT';
   const [currentAccount, setCurrentAccount] = useState('');
   const [isLoadingNFT, setIsLoadingNFT] = useState(false);
 
@@ -109,7 +109,7 @@ export const NFTProvider = ({ children }) => {
 
   const fetchNFTs = async () => {
     setIsLoadingNFT(false);
-    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/aT46mujHo45399eX-fWp9mucSwWW6iuA');
+   // const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/aT46mujHo45399eX-fWp9mucSwWW6iuA');
     const contract = fetchContract(provider);
     const data = await contract.fetchMarketItems();
 
