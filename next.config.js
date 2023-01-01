@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['polyplace.infura-ipfs.io'],
+    domains: ['altcoinchain.infura-ipfs.io'],
   },
 };
 
