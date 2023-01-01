@@ -7,7 +7,7 @@ const privateKey = fs.readFileSync('.secret').toString().trim();
 module.exports = {
   networks: {
     hardhat: {
-      chainId: 1337,
+      chainId: 2330,
     },
     matic: {
       url: 'https://rpc-mumbai.maticvigil.com',
