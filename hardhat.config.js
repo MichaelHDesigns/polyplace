@@ -7,7 +7,8 @@ require('@nomiclabs/hardhat-waffle');
 module.exports = {
   networks: {
     hardhat: {
-      chainId: 2330,
+      url: 'https://rpc0.altcoinchain.org/rpc',
+//      chainId: 2330,
     },
  //   matic: {
  //     url: 'https://rpc-mumbai.maticvigil.com',
