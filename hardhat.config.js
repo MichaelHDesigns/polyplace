@@ -9,10 +9,10 @@ module.exports = {
     hardhat: {
       chainId: 2330,
     },
-    matic: {
-      url: 'https://rpc-mumbai.maticvigil.com',
-      accounts: [privateKey],
-    },
+ //   matic: {
+ //     url: 'https://rpc-mumbai.maticvigil.com',
+ //     accounts: [privateKey],
+ //   },
   },
   solidity: '0.8.4',
 };
